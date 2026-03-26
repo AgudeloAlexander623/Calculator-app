@@ -23,3 +23,10 @@ This is a basic calculator web app that allows you to perform basic addition, su
 
 ```bash
 git clone https://github.com//Calculator-App.git
+```
+
+## Cambios (resumen)
+
+*ES:* Actualizamos la calculadora: HTML con `#display` y botones `data-*` (/, *). `script.mjs` calcula + - * / y muestra `prev op current` mientras escribes; al pulsar `=` solo muestra el resultado. CSS incluido.
+
+*EN:* Calculator updated: HTML with `#display` and `data-*` buttons (/, *). `script.mjs` computes + - * /, shows `prev op current` while typing, and `=` displays only the result. CSS added.
