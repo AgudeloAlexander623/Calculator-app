@@ -1,0 +1,114 @@
+/* Estilos simples para una calculadora basica (practica HTML/CSS/JS) */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans,
+    sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at top left, #182554, #0b1224 60%);
+  padding: 24px;
+}
+
+.calculadora {
+  width: min(360px, 100%);
+  padding: 18px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+.pantalla {
+  background: #0b1020;
+  color: #eaf0ff;
+  border-radius: 14px;
+  min-height: 72px;
+  padding: 14px 16px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-size: 2rem;
+  overflow: hidden;
+  word-break: break-all;
+  margin-bottom: 14px;
+}
+
+.teclado {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.btn {
+  appearance: none;
+  border: none;
+  border-radius: 14px;
+  background: #202a44;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 1.15rem;
+  font-weight: 700;
+  padding: 16px 0;
+  user-select: none;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.22);
+  transition: transform 0.05s ease, background 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn:hover {
+  background: #283455;
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn:focus-visible {
+  outline: 3px solid rgba(59, 130, 246, 0.65);
+  outline-offset: 2px;
+}
+
+.btn--op {
+  background: #1e4f8f;
+}
+
+.btn--op:hover {
+  background: #235aa5;
+}
+
+.btn--equals {
+  background: #0f766e;
+}
+
+.btn--equals:hover {
+  background: #0d8a7c;
+}
+
+.btn--action {
+  background: #7c2d12;
+}
+
+.btn--action:hover {
+  background: #9a3a17;
+}
+
+.btn--zero {
+  grid-column: span 2;
+}
+
+@media (max-width: 380px) {
+  .pantalla {
+    font-size: 1.7rem;
+  }
+  .btn {
+    font-size: 1.05rem;
+    padding: 14px 0;
+  }
+}
+

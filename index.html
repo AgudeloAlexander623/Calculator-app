@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -10,31 +10,35 @@
 
 <body>
     <div class="calculadora">
-        <div class="pantalla"></div>
-        <button class="btn" id="c">C</button>
-        <button id="borrar" class="btn"> <- </button>
-        <button class="btn"> 7 </button>
-        <button class="btn"> 8 </button>
-        <button class="btn"> 9 </button>
-        
-        <button class="btn"> - </button>
+        <div class="pantalla" id="display">0</div>
 
-        <button class="btn"> 4 </button>
-        <button class="btn"> 5 </button>
-        <button class="btn"> 6 </button>
+        <div class="teclado" role="group" aria-label="Teclado de la calculadora">
+            <button class="btn btn--action" data-action="clear" aria-label="Limpiar">C</button>
+            <button class="btn btn--action" data-action="backspace" aria-label="Borrar un dígito">←</button>
+            <button class="btn btn--op" data-op="/" aria-label="Dividir">/</button>
+            <button class="btn btn--op" data-op="*" aria-label="Multiplicar">*</button>
 
-        <button class="btn"> + </button>
+            <button class="btn" data-digit="7">7</button>
+            <button class="btn" data-digit="8">8</button>
+            <button class="btn" data-digit="9">9</button>
+            <button class="btn btn--op" data-op="-" aria-label="Restar">-</button>
 
-        <button class="btn"> 1 </button>
-        <button class="btn"> 2 </button>
-        <button class="btn"> 3 </button>
+            <button class="btn" data-digit="4">4</button>
+            <button class="btn" data-digit="5">5</button>
+            <button class="btn" data-digit="6">6</button>
+            <button class="btn btn--op" data-op="+" aria-label="Sumar">+</button>
 
-        <button id="igual" class="btn"> = </button>
-        <button id="cero" class="btn"> 0 </button>
-        <button class="btn" > . </button>
+            <button class="btn" data-digit="1">1</button>
+            <button class="btn" data-digit="2">2</button>
+            <button class="btn" data-digit="3">3</button>
+            <button class="btn btn--equals" data-action="equals" aria-label="Calcular">=</button>
+
+            <button class="btn btn--zero" data-digit="0" aria-label="Cero">0</button>
+            <button class="btn" data-action="decimal" aria-label="Punto decimal">.</button>
+        </div>
     
     </div>
-    <script src="script.js"></script>
+    <script src="script.mjs"></script>
 </body>
 
 </html>
