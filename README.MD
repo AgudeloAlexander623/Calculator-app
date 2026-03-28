@@ -1,32 +1,52 @@
-# 🌐 Calculadora / Calculator 
+# 🧮 Calculator-App
 
-*ES:*
-Esta es una app Web basica de una calculadora la cual permite hacer operaciones basicas de suma, resta,
-multiplicacion y division. Mas adelante se le agregaran mas funciones para que sea una calculadora inteligente.
-
-*EN:*
-This is a basic calculator web app that allows you to perform basic addition, subtraction, multiplication, and division operations. More features will be added later to make it a smart calculator.
+A simple and functional web calculator built with vanilla HTML, CSS, and JavaScript. This project was developed as a hands-on practice exercise as part of a JavaScript learning course.
 
 ---
 
-## 🧰 Tecnologías utilizadas
+## 📋 Description
 
-- HTML5
-- CSS3
-- JavaScript
+Calculator-App is a basic web tool that allows users to perform everyday arithmetic operations directly in the browser, with no frameworks or external libraries — just pure HTML, CSS, and JavaScript.
+
+### ✨ Features
+
+- ➕ Addition
+- ➖ Subtraction
+- ✖️ Multiplication
+- ➗ Division
 
 ---
 
-## 📦 Instalación (local)
+## 🛠️ Built With
 
-1. Clona el repositorio:
+- **HTML** — App structure
+- **CSS** — Styles and layout
+- **JavaScript (Vanilla)** — Logic and interactivity
 
-```bash
-git clone https://github.com//Calculator-App.git
-```
+---
 
-## Cambios (resumen)
+## 📚 What I Learned
 
-*ES:* Actualizamos la calculadora: HTML con `#display` y botones `data-*` (/, *). `script.mjs` calcula + - * / y muestra `prev op current` mientras escribes; al pulsar `=` solo muestra el resultado. CSS incluido.
+Working on this project helped me practice and reinforce the following JavaScript concepts:
 
-*EN:* Calculator updated: HTML with `#display` and `data-*` buttons (/, *). `script.mjs` computes + - * /, shows `prev op current` while typing, and `=` displays only the result. CSS added.
+- **Functions** — Organizing reusable logic for calculations
+- **Basic operators** — Applying arithmetic operators to handle math operations
+- **Basic math logic** — Managing operation flow and computing results correctly
+- **DOM events** — Using `addEventListener` to capture button clicks and update the interface dynamically
+
+---
+
+## 🚀 How to Run
+
+Since this project has no dependencies or build steps, running it is straightforward:
+
+1. Clone or download this repository
+2. Open the `index.html` file in your browser
+
+That's it! No installations required.
+
+---
+
+## 👨‍💻 Author
+
+Made with 💛 as part of a JavaScript course.
