@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/calculadora-cientifica/estilos.css">
+    <title>Calculadora Científica</title>
+</head>
+<body>
+        <div class="calculadora">
+        <div class="pantalla" id="display">0</div>
+
+
+        <div class="calculadora-cientifica" role="group" aria-label="Funciones científicas">
+            <button class="btn btn--op" data-op="sin" aria-label="Seno">Sin</button>
+            <button class="btn btn--op" data-op="cos" aria-label="Coseno">Cos</button>
+            <button class="btn btn--op" data-op="tan" aria-label="Tangente">Tan</button>
+            <button class="btn btn--op" data-op="log" aria-label="Logaritmo">Log</button>
+            <button class="btn btn--op" data-op="ln" aria-label="Logaritmo natural">Ln</button>
+            <button class="btn btn--op" data-op="exp" aria-label="Exponencial">Exp</button>
+            <button class="btn btn--op" data-op="x^y" aria-label="Potencia">x^y</button>
+            <button class="btn btn--op" data-op="√" aria-label="Raíz cuadrada">√</button>
+        </div>
+
+        <div class="teclado" role="group" aria-label="Teclado de la calculadora">
+            <button class="btn btn--action" data-action="clear" aria-label="Limpiar">C</button>
+            <button class="btn btn--action" data-action="backspace" aria-label="Borrar un dígito">←</button>
+            <button class="btn btn--op" data-op="(" aria-label="Paréntesis izquierda">(</button>
+            <button class="btn btn--op" data-op=")" aria-label="Paréntesis derecha">)</button>
+
+            <button class="btn" data-digit="7">7</button>
+            <button class="btn" data-digit="8">8</button>
+            <button class="btn" data-digit="9">9</button>
+            <button class="btn btn--op" data-op="/" aria-label="Dividir">/</button>
+
+            <button class="btn" data-digit="4">4</button>
+            <button class="btn" data-digit="5">5</button>
+            <button class="btn" data-digit="6">6</button>
+            <button class="btn btn--op" data-op="*" aria-label="Multiplicar">*</button>
+
+            <button class="btn" data-digit="1">1</button>
+            <button class="btn" data-digit="2">2</button>
+            <button class="btn" data-digit="3">3</button>
+            <button class="btn btn--op" data-op="+" aria-label="Sumar">+</button>
+
+            <button class="btn btn--zero" data-digit="0" aria-label="Cero">0</button>
+            <button class="btn" data-action="decimal" aria-label="Punto decimal">.</button>
+            <button class="btn btn--equals" data-action="equals" aria-label="Calcular">=</button>
+        </div>
+    
+    </div>
+    <script src="main.mjs"></script>
+</body>
+</html>
